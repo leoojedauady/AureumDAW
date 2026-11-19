@@ -96,9 +96,50 @@ button:hover {
   background-color: #e6c987;
 }
 
+.boton-rojo {
+  background-color: var(--rojo);
+  color: white;
+}
+
 .mensaje {
   color: var(--rojo);
   font-weight: bold;
+}
+
+.saldo {
+  font-size: 30px;
+  font-family: Georgia, serif;
+}
+
+.ingreso {
+  color: var(--verde);
+}
+
+.gasto {
+  color: var(--rojo);
+}
+
+/* ----- Tablas ----- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th,
+td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f0ece2;
+}
+
+td button {
+  margin-top: 0;
+  padding: 5px 10px;
 }
 
 /* ----- Página de login ----- */
