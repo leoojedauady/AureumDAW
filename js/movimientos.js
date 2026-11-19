@@ -178,3 +178,8 @@ function limpiarFormulario() {
 
 // Buscar mientras se escribe
 campoBuscar.addEventListener("input", mostrarMovimientos);
+
+// Imprimir (el CSS de @media print oculta el menú y los botones)
+document.getElementById("botonImprimir").addEventListener("click", function () {
+  window.print();
+});

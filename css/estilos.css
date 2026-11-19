@@ -147,3 +147,39 @@ td button {
   max-width: 400px;
   margin: 60px auto;
 }
+
+/* ----- Celulares ----- */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  th,
+  td {
+    font-size: 13px;
+    padding: 5px;
+  }
+}
+
+/* ----- Impresión: solo se imprime la tabla de movimientos ----- */
+@media print {
+  header,
+  form,
+  button,
+  .no-imprimir {
+    display: none;
+  }
+
+  body {
+    background-color: white;
+  }
+
+  .caja {
+    border: none;
+  }
+}
