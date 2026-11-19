@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aureum Bank - Iniciar sesión</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <main>
+    <div class="caja login">
+      <h1>AUREUM BANK</h1>
+      <h2>Iniciar sesión</h2>
+
+      <form id="formLogin">
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" required>
+
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" required>
+
+        <p id="mensaje" class="mensaje"></p>
+
+        <button type="submit">Entrar</button>
+      </form>
+
+      <p>Usuario de prueba: <strong>demo</strong> / Contraseña: <strong>1234</strong></p>
+    </div>
+  </main>
+
+  <script src="js/login.js"></script>
+</body>
+</html>

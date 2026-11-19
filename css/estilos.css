@@ -1,0 +1,108 @@
+/* Colores de Aureum Bank */
+:root {
+  --azul: #0b1b3a;
+  --dorado: #c9a24b;
+  --fondo: #f5f3ee;
+  --verde: #1f7a52;
+  --rojo: #b03a2e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--fondo);
+  color: #1b2540;
+}
+
+h1,
+h2 {
+  font-family: Georgia, serif;
+  color: var(--azul);
+}
+
+/* ----- Encabezado y menú ----- */
+header {
+  background-color: var(--azul);
+  padding: 15px 20px;
+}
+
+header h1 {
+  color: var(--dorado);
+  margin: 0 0 10px 0;
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--dorado);
+}
+
+/* ----- Contenido ----- */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.caja {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: var(--dorado);
+  color: var(--azul);
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  margin-top: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e6c987;
+}
+
+.mensaje {
+  color: var(--rojo);
+  font-weight: bold;
+}
+
+/* ----- Página de login ----- */
+.login {
+  max-width: 400px;
+  margin: 60px auto;
+}
