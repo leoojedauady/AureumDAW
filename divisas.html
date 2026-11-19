@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aureum Bank - Divisas</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>AUREUM BANK</h1>
+    <nav>
+      <a href="movimientos.html">Movimientos</a>
+      <a href="comprobantes.html">Comprobantes</a>
+      <a href="divisas.html">Divisas</a>
+      <a href="#" id="salir">Cerrar sesión</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="caja">
+      <h2>Conversor de dólares</h2>
+      <p>El tipo de cambio se obtiene de la API pública open.er-api.com</p>
+
+      <form id="formDivisas">
+        <label for="cantidad">Cantidad en dólares (USD)</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" value="100" required>
+
+        <label for="moneda">Convertir a</label>
+        <select id="moneda" name="moneda">
+          <option value="MXN">Pesos mexicanos (MXN)</option>
+          <option value="EUR">Euros (EUR)</option>
+          <option value="CAD">Dólares canadienses (CAD)</option>
+          <option value="JPY">Yenes japoneses (JPY)</option>
+        </select>
+
+        <button type="submit">Convertir</button>
+      </form>
+
+      <p class="saldo" id="resultado"></p>
+      <p id="mensaje" class="mensaje"></p>
+    </div>
+  </main>
+
+  <script src="js/sesion.js"></script>
+  <script src="js/divisas.js"></script>
+</body>
+</html>

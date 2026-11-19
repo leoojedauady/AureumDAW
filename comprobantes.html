@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aureum Bank - Comprobantes</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>AUREUM BANK</h1>
+    <nav>
+      <a href="movimientos.html">Movimientos</a>
+      <a href="comprobantes.html">Comprobantes</a>
+      <a href="divisas.html">Divisas</a>
+      <a href="#" id="salir">Cerrar sesión</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="caja">
+      <h2>Subir comprobante</h2>
+      <p>Solo archivos PDF, PNG o JPG de máximo 1 MB.</p>
+
+      <form id="formArchivo">
+        <label for="archivo">Archivo</label>
+        <input type="file" id="archivo" name="archivo" accept=".pdf,.png,.jpg,.jpeg" required>
+
+        <p id="mensaje" class="mensaje"></p>
+
+        <button type="submit">Subir</button>
+      </form>
+    </div>
+
+    <div class="caja">
+      <h2>Mis comprobantes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tabla"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="js/sesion.js"></script>
+  <script src="js/comprobantes.js"></script>
+</body>
+</html>
